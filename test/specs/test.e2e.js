@@ -48,7 +48,7 @@ describe("IT Asset Management", () => {
       await pages("license").licenseComponent.successPopup
     ).toBeDisplayed();
   });
-  it.only("checks HARDWARE FORM", async () => {
+  it("checks HARDWARE FORM", async () => {
     await pages("hardware").open("/");
     await pages("hardware").hardwareComponent.addNewHardware(
       "Dell XPS 13",
